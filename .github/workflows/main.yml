@@ -32,6 +32,10 @@ jobs:
       REPO_NAME: nodejs-demo-app
 
     steps:
+
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
 
